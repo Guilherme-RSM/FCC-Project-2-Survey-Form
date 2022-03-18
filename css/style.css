@@ -1,0 +1,162 @@
+/*==IMPORTANDO FONTE DO GOOGLE FONTS==*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*==RESET==*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/*==HEADER==*/
+h1 {
+  color:white;
+  text-align:center;
+  
+}
+
+#survey-form {
+}
+
+#description {
+  color:white;
+  text-align:center;
+  margin: 10px;
+  font-weight:200;
+}
+
+/*==CONTAINER==*/
+#container {
+  background-image:url("../img/dev-background.jpg");
+  background-size:cover;
+  z-index:1000;
+}
+
+#container, img {
+  width:100%;
+}
+
+
+/*==CONTEÚDO PRINCIPAL DO FOMRULÁRIO==*/
+
+#survey-form {
+  background-color:white;
+  opacity:0.8;
+  width:80%;
+  height:100%;
+  z-index:1000;
+  border-radius:10px;
+  margin:0 auto;
+  justify-content:center;
+  padding:20px;
+  border: 1px solid black;
+  box-shadow: 15px 15px 10px black;
+}
+
+/*==ESTILIZAÇÃO DOS INPUTS==*/
+.form-style {
+  background-color:#432143;
+  color:white;
+  border-radius:5px;
+  padding:10px;
+}
+
+.form-group{
+  margin:15px;
+ 
+}
+
+.form-group, inputs {
+  display:flex;
+  flex-direction:column;
+  padding:5px;
+
+}
+
+.form-group input[text], label {
+  border-radius:10px;
+
+  
+}
+
+#stack {  
+  display:flex;
+  flex-direction:column;}
+
+.input-radio {
+ margin-top:20px;
+ margin-left:10px;
+}
+
+#tecnologias {
+  display:flex;
+  flex-direction:column;
+}
+
+#tecnologias, {
+  margin:0 auto;
+}
+
+#tecnologias input {
+  margin-top:10px;
+}
+ 
+#inicio-dos-estudos {
+  width:100%;
+  margin:0 auto;
+}
+
+#inicio-dos-estudos, p {
+margin-top:20px;
+margin-bottom:10px;}
+
+/*==ÁREA PARA==*/
+textarea {
+  padding:10px;
+  background: #432143;
+  color:#fff;
+  max-width:100%;
+  max-height:300px;
+}
+
+#button {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  
+}
+.submit-button {
+  display:flex;
+  width:100%;
+  padding:10px;
+  margin:20px;
+  justify-content:center;
+  border-radius:5px;
+  background:#035fd5;
+  color:#fff;
+  cursor:pointer;
+}
+
+/*==FOOTER==*/
+#rodape {
+  color:#fff;
+  text-align:center;
+  margin:20px;
+}
+
+#rodape a {
+  text-decoration:none;
+  color:white;
+}
+
+#rodape a:hover {
+  color:#36b9ff;
+}

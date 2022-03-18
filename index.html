@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen - FFC Project 2 - Survey Form</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="container">
+  
+  <!--CABEÇALHO-->
+  <header class="header">
+<h1 id="title">Formulário de Pesquisa</h1>
+<p id="description">Desde já agradecemos por sua contribuição com essa pesquisa ao preencher este formulário.</p>
+  </header>
+
+  
+  <!--FORMULÁRIO-->
+<form id="survey-form" action="https://github.com/Guilherme-RSM" target="_blank">
+  
+      <!--INPUTS-->
+  <div class="form-group">
+    <label id="name-label" for="name">Nome</label>
+    <input type="text" id="name" class="form-style" placeholder="Digite seu nome" required>
+  </div>
+    
+  <div class="form-group">
+    <label id="email-label" for="email">E-mail</label>
+    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" class="form-style" required>
+  </div>
+  
+  <div class=form-group>
+    <label id="number-label">Idade</label>
+      <input type="number" name="number" id="number" min="10" max="100" placeholder="Digite aqui sua idade" required class="form-style">
+  </div>
+  
+  <!--DROPDOWN I-->
+  <div class="form-group">
+    <p>Qual é o seu nível de experiência?</p>
+  <select id="dropdown" name="dropdown-menu" class="form-style" required>
+    <option disable selected value>Selecione seu nível de experiência</option>
+    <option value="student">Estudante iniciante</option>
+    <option value="middle-student">Estudante intermediário</option>
+    <option value="advanced-student">Estudante avançado</option>
+    <option value="dev-junior">Desenvolvedor Junior</option>
+    <option value="dev-pelno">Desenvolvedor Pleno</option>
+    <option value="dev-senior">Desenvolvedor Sênior</option>
+  </select>
+  </div>
+  
+  <!--IMPUTS RADIO BUTTONS-->
+  <div class="form-group">
+    <div id="stack">
+    <p>Qual é a sua área de desenvolvimento?</p>
+    <label>
+      <input type="radio"name="stack" value="front-end" class="input-radio"checked> Front-End
+      </label>
+      
+    <label>
+      <input type="radio" name="stack" value="back-end" class="input-radio"> Back-End
+      </label>
+      
+    <label>
+      <input type="radio" name="stack" value="fullstack" class="input-radio"> Fullstack 
+      </label>
+    </div>
+  
+    
+  <!--DROPDOWN II - INICIO DOS ESTUDOS-->
+    <div class="form-group" id="inicio-dos-estudos">
+      <p>Com quantos anos você começou estudar programação?</p>
+      
+      <select class="form-style">
+        <option disable select value> Selecione a idade aproximadamente
+        </option>
+        
+        <option value="10-20">11 a 20 anos</option>
+        
+        <option value="21-30">21 a 30 anos</option>
+        
+        <option value="31-40">31 a 40 anos</option>
+        
+        <option value="41-50"> 41 a 50 anos</option>
+        
+        <option value="51-60">51 a 60 anos</option>
+      </select>
+    </div>
+  
+  <!--INPUTS CHECKBOX-->
+  <div id="tecnologias" class="form-group">   
+    <p>Com quais destas tecnologias você esta mais familiarizado?</p>
+    <label name="html">
+    <input type="checkbox" value="HTML">HTML
+    </label>
+      
+    <label name="css">
+      <input type="checkbox" value="CSS">CSS
+      </label>
+      
+    <label name="JavaScript">
+      <input type="checkbox" value="JavaScript">JavaScript
+      </label>
+      
+    <label name="bootstrap">
+      <input type="checkbox" value="bootstrap">Boostrap
+      </label>
+      
+    <label name="jquery">
+      <input type="checkbox" value="jQuery">jQuery
+      </label>
+  </d>
+  </div>
+  </div>
+  
+  <div class="form-group">
+    <p>Compartilhe com a gente mais alguns detalhes:</p>
+    <textarea placeholder="Digite aqui mais informações sobre suas experiências de trabalho ou aprendizado...">
+</textarea>
+  </div>
+  <div class="form-group>" id="button">
+    <button type="submit" id="submit" class="submit-button">Enviar</button>
+       </div>  
+  
+  
+</form>
+  
+  <footer id="rodape"><a href="https://github.com/Guilherme-RSM" target="_blank">Desenvolvido por Guilherme-RSM</a></fotter>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
